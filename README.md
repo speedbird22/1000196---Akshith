@@ -11,7 +11,7 @@
 
 - ⚡ Fun fact **HTML is my most favorite language**
 
-<h3 align="left">Connect with me:</h3>
+
 <p align="left">
 </p>
 
