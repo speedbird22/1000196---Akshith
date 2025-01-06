@@ -20,15 +20,12 @@
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=speedbird22&show_icons=true&locale=en&layout=compact" alt="speedbird22" /></p>
 
+ <h1>Olympix Insights</h1>
 
-
-    
-    <h1>Olympix Insights</h1>
-
-    <h2>About the App</h2>
+<h2>About the App</h2>
     <p><strong>Olympix Insights</strong> is a data-driven analytical application designed to explore the historical and contemporary trends in the Olympic Games. Leveraging datasets like athlete events, country region mappings, and detailed medal statistics, this app offers a deep dive into various facets of the Olympics, including athlete demographics, country performances, and gender participation. Users can visualize patterns, identify trends, and gain insights into Olympic data through a series of dynamic and visually appealing graphs.</p>
 
-    <h2>Key Features and Graph Descriptions</h2>
+<h2>Key Features and Graph Descriptions</h2>
     <ol>
         <li><strong>Top 10 Countries with Most Gold Medals</strong>
             <p>Displays the top-performing countries in terms of gold medals won across all Olympic events using a horizontal bar graph. Highlights the dominance of certain countries over others in securing gold medals.</p>
@@ -62,7 +59,7 @@
         </li>
     </ol>
 
-    <h2>Analysis of Outcomes</h2>
+ <h2>Analysis of Outcomes</h2>
     <ol>
         <li><strong>Top Countries in Gold Medals</strong>
             <p>Highlights dominant countries like the USA, USSR (former), and China, reflecting the influence of economic and infrastructural investment in sports.</p>
@@ -87,7 +84,7 @@
         </li>
     </ol>
 
-    <h2>Errors Faced During the Process</h2>
+  <h2>Errors Faced During the Process</h2>
     <ul>
         <li>Missing and null values in critical fields like age, height, and medal data, which were handled by dropping rows with null values.</li>
         <li>KeyError for 'year' column, resolved by ensuring it was numeric using <code>pd.to_numeric</code>.</li>
@@ -98,4 +95,4 @@
         <li>Overlapping legends and labels in some graphs, adjusted using <code>tight_layout()</code>.</li>
     </ul>
 
-    <p>This app combines rich historical data, intuitive visualizations, and insightful analytics to cater to sports enthusiasts, statisticians, and decision-makers alike.</p>
+  <p>This app combines rich historical data, intuitive visualizations, and insightful analytics to cater to sports enthusiasts, statisticians, and decision-makers alike.</p>
