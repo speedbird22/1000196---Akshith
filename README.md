@@ -96,4 +96,7 @@
   <p>This app combines rich historical data, intuitive visualizations, and insightful analytics to cater to sports enthusiasts, statisticians, and decision-makers alike.</p>
 <h1> Heres a link to my workspace in Google colab - </h1> https://colab.research.google.com/drive/1LJgI7lMkplBACQv2ZPoyGcNnVTBthY86?usp=sharing 
 
-<h4><i>CITATIONS:</i></h4>
+<h4><i>CITATIONS:</i></h4
+https://chatgpt.com/ - <h4>ChatGPT</h4>
+https://www.geeksforgeeks.org/simple-plot-in-python-using-matplotlib/?ref=gcse_ind - <h4>GeeksForGeeks MatPlotLib tutorial</h4>
+https://youtu.be/xi0vhXFPegw?feature=shared - <h4>Youtube link for tutorial on data analysing</h4>
