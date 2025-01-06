@@ -28,32 +28,31 @@
 Key Features and Graph Descriptions:
 
 Top 10 Countries with Most Gold Medals
-
 Purpose: Displays the top-performing countries in terms of gold medals won across all Olympic events.
 Graph Type: Horizontal bar graph.
 Insight: Highlights the dominance of certain countries over others in securing gold medals.
-Top 10 Countries in Gymnastics Over the Years
 
+<h1>Top 10 Countries in Gymnastics Over the Years</h1>
 Purpose: Identifies the top countries excelling in Gymnastics, showcasing their consistency and prowess in the sport.
 Graph Type: Horizontal bar graph.
 Insight: Reflects trends in specific sports and which countries have historically excelled in Gymnastics.
-Gender Participation Over Time
 
+<h1>Gender Participation Over Time</h1>
 Purpose: Analyzes the participation of male and female athletes across all years of the Olympics.
 Graph Type: Stacked bar chart.
 Insight: Reveals the progress of gender inclusion in sports over decades.
-Sports Count Over Time
 
+<h1>Sports Count Over Time</h1>
 Purpose: Tracks the number of unique sports represented in the Olympics over time.
 Graph Type: Line plot.
 Insight: Displays how the diversity of sports has expanded or fluctuated historically.
-Age Distribution of Gold Medalists
 
+<h1>Age Distribution of Gold Medalists</h1>
 Purpose: Studies the age range of athletes who win gold medals.
 Graph Type: Histogram with KDE overlay.
 Insight: Highlights the age brackets where athletes peak in performance.
-Summer Sports Over Time
 
+<h1>Summer Sports Over Time</h1>
 Purpose: Focuses on the evolution of summer sports across Olympic history.
 Graph Type: Line plot.
 Insight: Displays trends specific to summer sports and their increasing diversity.
