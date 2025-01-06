@@ -21,117 +21,89 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=speedbird22&show_icons=true&locale=en&layout=compact" alt="speedbird22" /></p>
 
 
-<H1> ABOUT MY PROJECT - Olympix Insights</H1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympix Insights</title>
+</head>
+<body>
+    <h1>Olympix Insights</h1>
 
-<h4>Olympix Insights is a data-driven analytical application designed to explore the historical and contemporary trends in the Olympic Games. Leveraging datasets like athlete events, country region mappings, and detailed medal statistics, this app offers a deep dive into various facets of the Olympics, including athlete demographics, country performances, and gender participation. Users can visualize patterns, identify trends, and gain insights into Olympic data through a series of dynamic and visually appealing graphs.
+    <h2>About the App</h2>
+    <p><strong>Olympix Insights</strong> is a data-driven analytical application designed to explore the historical and contemporary trends in the Olympic Games. Leveraging datasets like athlete events, country region mappings, and detailed medal statistics, this app offers a deep dive into various facets of the Olympics, including athlete demographics, country performances, and gender participation. Users can visualize patterns, identify trends, and gain insights into Olympic data through a series of dynamic and visually appealing graphs.</p>
 
-Key Features and Graph Descriptions:
+    <h2>Key Features and Graph Descriptions</h2>
+    <ol>
+        <li><strong>Top 10 Countries with Most Gold Medals</strong>
+            <p>Displays the top-performing countries in terms of gold medals won across all Olympic events using a horizontal bar graph. Highlights the dominance of certain countries over others in securing gold medals.</p>
+        </li>
+        <li><strong>Top 10 Countries in Gymnastics Over the Years</strong>
+            <p>Identifies the top countries excelling in Gymnastics with a horizontal bar graph, showcasing their consistency and prowess in the sport.</p>
+        </li>
+        <li><strong>Gender Participation Over Time</strong>
+            <p>Analyzes the participation of male and female athletes across all years of the Olympics using a stacked bar chart, revealing the progress of gender inclusion in sports over decades.</p>
+        </li>
+        <li><strong>Sports Count Over Time</strong>
+            <p>Tracks the number of unique sports represented in the Olympics over time using a line plot, displaying how the diversity of sports has expanded or fluctuated historically.</p>
+        </li>
+        <li><strong>Age Distribution of Gold Medalists</strong>
+            <p>Studies the age range of athletes who win gold medals with a histogram and KDE overlay, highlighting the age brackets where athletes peak in performance.</p>
+        </li>
+        <li><strong>Summer Sports Over Time</strong>
+            <p>Focuses on the evolution of summer sports across Olympic history with a line plot, displaying trends specific to summer sports and their increasing diversity.</p>
+        </li>
+        <li><strong>Winter Sports Over Time</strong>
+            <p>Mirrors the analysis for winter sports, focusing on their growth and diversity over the years with a line plot.</p>
+        </li>
+        <li><strong>Average Height of Male and Female Athletes Over Time</strong>
+            <p>Tracks changes in average height for male and female athletes with a line plot, examining physiological trends among athletes over time.</p>
+        </li>
+        <li><strong>Top Performing Athletes in Ice Hockey</strong>
+            <p>Identifies top athletes in Ice Hockey by their medal count, segmented by gender, using a horizontal bar graph with gender-wise distinction.</p>
+        </li>
+        <li><strong>India's Performance in All Olympic Games</strong>
+            <p>Evaluates India's medal achievements across all Olympic events with a bar chart, shedding light on India’s strengths and areas for improvement in international sports.</p>
+        </li>
+    </ol>
 
-Top 10 Countries with Most Gold Medals
-Purpose: Displays the top-performing countries in terms of gold medals won across all Olympic events.
-Graph Type: Horizontal bar graph.
-Insight: Highlights the dominance of certain countries over others in securing gold medals.
+    <h2>Analysis of Outcomes</h2>
+    <ol>
+        <li><strong>Top Countries in Gold Medals</strong>
+            <p>Highlights dominant countries like the USA, USSR (former), and China, reflecting the influence of economic and infrastructural investment in sports.</p>
+        </li>
+        <li><strong>Gymnastics Over the Years</strong>
+            <p>Shows continued dominance by countries such as the USA, Russia, and China, emphasizing the importance of long-term athlete programs.</p>
+        </li>
+        <li><strong>Gender Participation</strong>
+            <p>Demonstrates a significant rise in female participation over time, reflecting global advancements in gender equity in sports.</p>
+        </li>
+        <li><strong>Sports Count Over Time</strong>
+            <p>Indicates the growing inclusivity of diverse sporting disciplines, with both summer and winter sports showing growth.</p>
+        </li>
+        <li><strong>Age Distribution</strong>
+            <p>Highlights the prime age for peak athletic performance, with most gold medalists in their late teens to early thirties.</p>
+        </li>
+        <li><strong>Average Height</strong>
+            <p>Shows gradual increases in height, especially for male athletes, reflecting physiological evolution and specialization in sports.</p>
+        </li>
+        <li><strong>India’s Performance</strong>
+            <p>Shows a stronger medal count in recent years but overall performance lags behind global leaders, suggesting a need for better infrastructure and grassroots programs.</p>
+        </li>
+    </ol>
 
-<h1>Top 10 Countries in Gymnastics Over the Years</h1>
-Purpose: Identifies the top countries excelling in Gymnastics, showcasing their consistency and prowess in the sport.
-Graph Type: Horizontal bar graph.
-Insight: Reflects trends in specific sports and which countries have historically excelled in Gymnastics.
+    <h2>Errors Faced During the Process</h2>
+    <ul>
+        <li>Missing and null values in critical fields like age, height, and medal data, which were handled by dropping rows with null values.</li>
+        <li>KeyError for 'year' column, resolved by ensuring it was numeric using <code>pd.to_numeric</code>.</li>
+        <li>Invalid color palettes in Seaborn, fixed by using valid options like <code>YlOrBr</code>, <code>viridis</code>, and <code>coolwarm</code>.</li>
+        <li>Inconsistent column names across datasets, standardized to lowercase with stripped spaces.</li>
+        <li>Mismatch in NOC codes between datasets, handled by using a left join and noting discrepancies.</li>
+        <li>Misclassification of seasons in some cases, corrected using explicit filtering by the 'season' column.</li>
+        <li>Overlapping legends and labels in some graphs, adjusted using <code>tight_layout()</code>.</li>
+    </ul>
 
-<h1>Gender Participation Over Time</h1>
-Purpose: Analyzes the participation of male and female athletes across all years of the Olympics.
-Graph Type: Stacked bar chart.
-Insight: Reveals the progress of gender inclusion in sports over decades.
-
-<h1>Sports Count Over Time</h1>
-Purpose: Tracks the number of unique sports represented in the Olympics over time.
-Graph Type: Line plot.
-Insight: Displays how the diversity of sports has expanded or fluctuated historically.
-
-<h1>Age Distribution of Gold Medalists</h1>
-Purpose: Studies the age range of athletes who win gold medals.
-Graph Type: Histogram with KDE overlay.
-Insight: Highlights the age brackets where athletes peak in performance.
-
-<h1>Summer Sports Over Time</h1>
-Purpose: Focuses on the evolution of summer sports across Olympic history.
-Graph Type: Line plot.
-Insight: Displays trends specific to summer sports and their increasing diversity.
-Winter Sports Over Time
-
-Purpose: Mirrors the analysis for winter sports, focusing on their growth and diversity over the years.
-Graph Type: Line plot.
-Insight: Highlights the evolution of winter sports' popularity.
-Average Height of Male and Female Athletes Over Time
-
-Purpose: Tracks changes in average height for male and female athletes.
-Graph Type: Line plot.
-Insight: Examines physiological trends among athletes over time.
-Top Performing Athletes in Ice Hockey
-
-Purpose: Identifies top athletes in Ice Hockey by their medal count, segmented by gender.
-Graph Type: Horizontal bar graph with gender-wise distinction.
-Insight: Highlights exceptional individual performers in a team-centric sport.
-India's Performance in All Olympic Games
-
-Purpose: Evaluates India's medal achievements across all Olympic events.
-Graph Type: Bar chart.
-Insight: Sheds light on India’s strengths and areas for improvement in international sports.
-Analysis of Outcomes:
-Top Countries in Gold Medals:
-
-Outcome: The graph highlights dominant countries such as the USA, USSR (former), and China. It reflects the influence of economic and infrastructural investment in sports.
-Insight: Encourages understanding of sports hegemony and disparities in resource allocation.
-Gymnastics Over the Years:
-
-Outcome: Gymnastics sees continued dominance by countries like the USA, Russia, and China.
-Insight: Gymnastics relies heavily on discipline and long-term athlete programs.
-Gender Participation:
-
-Outcome: There’s a significant rise in female participation over time, closing the gender gap.
-Insight: Reflects global advancements in gender equity in sports.
-Sports Count Over Time:
-
-Outcome: Both summer and winter sports show growth, with summer sports exhibiting a steeper increase.
-Insight: Indicates the growing inclusivity of diverse sporting disciplines.
-Age Distribution:
-
-Outcome: Most gold medalists are in their late teens to early thirties.
-Insight: Highlights the prime age for peak athletic performance.
-Average Height:
-
-Outcome: Gradual increases in height, especially for male athletes, were observed.
-Insight: Reflects physiological evolution and athlete specialization in certain sports.
-India’s Performance:
-
-Outcome: A stronger medal count in recent years, but overall performance still lags behind global leaders.
-Insight: Suggests a need for better infrastructure and grassroots programs.
-Errors Faced During the Process:
-Missing and Null Values:
-
-Many rows in the dataset had missing age, height, or medal data.
-Solution: Dropped rows with null values in critical fields.
-KeyError for 'year':
-
-The 'year' column was occasionally read incorrectly due to formatting.
-Solution: Ensured 'year' was numeric by using pd.to_numeric.
-Palette Errors in Seaborn:
-
-Some color palettes were invalid (e.g., "gold").
-Solution: Switched to valid palettes like YlOrBr, viridis, or coolwarm.
-Inconsistent Column Names:
-
-Column names differed across datasets.
-Solution: Standardized column names to lowercase and stripped spaces.
-Mismatch in NOC Codes:
-
-Some NOC codes in the athlete events dataset did not match the NOC regions dataset.
-Solution: Used a left join to avoid data loss but noted discrepancies.
-Data Overlap in Seasons:
-
-Misclassification of summer and winter sports in some cases.
-Solution: Filtered explicitly by the 'season' column.
-Visualization Overlaps:
-
-Overlapping legends and labels in some graphs.
-Solution: Used tight_layout() to adjust spacing.
-</h4>
+    <p>This app combines rich historical data, intuitive visualizations, and insightful analytics to cater to sports enthusiasts, statisticians, and decision-makers alike.</p>
+</body>
+</html>
