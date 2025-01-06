@@ -21,14 +21,8 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=speedbird22&show_icons=true&locale=en&layout=compact" alt="speedbird22" /></p>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olympix Insights</title>
-</head>
-<body>
+
+    
     <h1>Olympix Insights</h1>
 
     <h2>About the App</h2>
@@ -105,5 +99,3 @@
     </ul>
 
     <p>This app combines rich historical data, intuitive visualizations, and insightful analytics to cater to sports enthusiasts, statisticians, and decision-makers alike.</p>
-</body>
-</html>
